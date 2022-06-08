@@ -8,10 +8,10 @@ const stacked = ({width, height}) => {
       height={height}
       width={width}
       id="chart"
-
+      
       primaryXAxis={stackedPrimaryXAxis}
       primaryYAxis={stackedPrimaryYAxis}
-      chartArea={{ border: { width: 1 }}}
+      chartArea={{ border: { width: 0 }}}
       tooltip={{enable: true}}
       legendSettings={{background: 'white'}}
       >
@@ -24,6 +24,5 @@ const stacked = ({width, height}) => {
     </ChartComponent>
   )
 }
-stackedCustomSeries.map((item, index) => {console.log(item, index);})
-console.log(stackedCustomSeries[0].type);
+
 export default stacked
